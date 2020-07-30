@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css?family=Comfortaa&display=swap');
+		
+html, body {
+	margin: 0;
+	height: 100%;
+	}
+			
+body {
+	font-family: Comfortaa, "Comic Sans MS", Arial, sans-serif;
+	background-color: #d4f0faff;
+	}
+
+* {
+	box-sizing: border-box;
+	}
+			
+.content {
+	min-height: 100%;
+	display: flex;
+	flex-direction: row;
+	margin-left: 0px;
+	overflow: hidden;
+	}
+
+a {
+	color: inherit;
+	}
+		
+a:hover {
+	color: blue;
+	}
+
+/*Left Side*/
+
+.left {
+	width: 50%;
+	padding: 5px
+	}
+			
+#DevTag {
+	padding: 5px;
+	margin: 0px;
+	margin-left: 2px;
+	text-align: center;
+	border-radius: 25px;
+	display:inline-block;
+	font-size: 15px;
+	vertical-align:super;
+	}
+
+input[type=text]{
+	width: 50%;
+	padding:12px 20px;
+	border:2px solid white;
+  	border-radius:4px;
+	background-color:#F0F0F0;
+	}
+			
+button {
+	background-color: #7AC5CD;
+	font-size: 16px;
+	padding: 10px 15px;
+	border-radius: 12px;
+	width: 25%;
+	border:2px solid black;
+	margin-left: 5px;
+	}
+				
+button:hover {
+  	background-color: #8EE5EE;
+	}
+			
+button:active {
+  	background-color: #8EE5EE;
+	outline: none;
+	}
+			
+#Ecode {
+	height: 100px;
+	width: 50%;
+	border: none;
+	border-radius: 2%;
+	resize: none;
+	float: left;
+	background: transparent;
+	}
+			
+#Ecode:focus {
+  	outline: none;
+	}
+		
+#copied {
+	margin-left: 10px;
+			}
+/*End Left*/
+		
+.middle {
+	width: 20%;
+	background-image: url("RightBG.svg");
+  	background-position: left;
+ 	background-repeat: no-repeat;
+  	background-size: cover;
+	}
+/*Right Side*/
+			
+.right {
+	text-align: center;
+	width: 30%;
+	background-color: #aae9ffff;
+	}
+			
+#embed {
+	width: 250px; 
+	height: 600px;
+	margin: auto;
+	}
+			
+@media only screen and (max-width: 1045px) {
+	.content {
+		flex-direction: column;
+		}
+	.left {
+		width: 100%;
+		}	
+	.middle {
+		width: 100%;
+		visibility: hidden;
+		}
+	.right {
+		width: 100%;
+		}
+}
