@@ -7,7 +7,7 @@ function error(title, message) {
 	document.getElementById("error").innerHTML = message;
 }
 
-var topURL = parent;
+var topURL = parent.document.getElementById(window.name);
 
 var pull = new XMLHttpRequest()		
 var Oldsid = location.hash
@@ -38,7 +38,7 @@ function calculate(){
 
 function display(){
 	var pull = new XMLHttpRequest()
-	pull.open("GET", `https://cors-anywhere.herokuapp.com/https://api.scratch.mit.edu/studios/${sid}/`);
+	pull.open("GET", `https://scratchcors.herokuapp.com/https://api.scratch.mit.edu/studios/${sid}/`);
 	pull.send();
 		pull.onreadystatechange = function() {
 			if (pull.readyState === 4 && pull.status === 200) {
