@@ -6,7 +6,9 @@ function error(title, message) {
 	document.getElementById("title").innerHTML = title;
 	document.getElementById("error").innerHTML = message;
 }
-		
+
+var topUrl = parent;
+
 var pull = new XMLHttpRequest()		
 var Oldsid = location.hash
 var sid = Oldsid.substring(1).toUpperCase();
