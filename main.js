@@ -7,7 +7,7 @@ function error(title, message) {
 	document.getElementById("error").innerHTML = message;
 }
 
-var topURL = parent.document.getElementById(window.name);
+var topURL = window.frameElement;
 
 var pull = new XMLHttpRequest()		
 var Oldsid = location.hash
@@ -45,7 +45,7 @@ function display(){
 				var pulldone = JSON.parse(pull.responseText);
 				var title = pulldone.title
 				//document.getElementById("title").innerHTML = `<a href="https://scratch.mit.edu/studios/${sid}">${title}</a>`;
-				document.getElementById("title").innerHTML = topURL.location.href;
+				document.getElementById("title").innerHTML = topURL;
 				document.getElementById("image").innerHTML = `<img src=https://cdn2.scratch.mit.edu/get_image/gallery/${sid}_200x130.png class='image'>`;
 				var desc = pulldone.description
 				document.getElementById("textarea").innerHTML = `<textarea id="desc" readonly>${desc}</textarea>`;
