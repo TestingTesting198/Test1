@@ -7,7 +7,7 @@ function error(title, message) {
 	document.getElementById("error").innerHTML = message;
 }
 
-var topUrl = parent;
+var topURL = parent;
 console.log(topURL);
 
 var pull = new XMLHttpRequest()		
