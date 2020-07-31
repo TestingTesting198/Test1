@@ -1,5 +1,3 @@
-var topUrl = top.location.href;
-
 if (window.location.hash === "" || window.location.hash === "#") {
 	window.location.replace("home");
 	} 
