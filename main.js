@@ -8,6 +8,7 @@ function error(title, message) {
 }
 
 var topURL = window.frameElement;
+console.log(topURL);
 
 var pull = new XMLHttpRequest()		
 var Oldsid = location.hash
