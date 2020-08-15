@@ -7,7 +7,7 @@ function error(title, message) {
 	document.getElementById("error").innerHTML = message;
 }
 
-var topURL = window.frameElement;
+var topURL = document.referrer;
 console.log(topURL);
 
 var pull = new XMLHttpRequest()		
